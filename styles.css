@@ -24,6 +24,16 @@ body {
 	width: auto;
 }
 
+photogrid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	max-height: 800px;
+}
+
+img{
+	width: 100%;
+}
 
 .homecontainer {
 	margin-top: 60px;
@@ -36,7 +46,13 @@ body {
 	margin-top: 40px;
 	margin-left: 50px;
 	position: relative;
+	max-width: 680px;
+	min-width: 680px;
 
+}
+
+.favoritescontainer {
+	position: ;
 }
 
 .projectcontainer {
@@ -45,11 +61,8 @@ body {
 	color: black;
 }
 
-.favoritescontainer {
-	position: ;
-}
+.filmcontainer {
 
-.projectslist {
 }
 
 
