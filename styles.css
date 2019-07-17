@@ -1,0 +1,94 @@
+
+body {
+	background-color: #F3F2EE;
+	transition-delay: 0.3s;
+	transition: ease-in-out;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+	position: left;
+	width: 550px;
+	min-width: 550px;
+}
+
+.right {
+	position: left;
+	width: auto;
+}
+
+
+.homecontainer {
+	margin-top: 60px;
+	min-width: 400px;
+	position: relative;
+	margin-left: 45px;
+}
+
+.photocontainer {
+	margin-top: 40px;
+	margin-left: 50px;
+	position: relative;
+
+}
+
+.projectcontainer {
+	position: relative;
+	text-align: left;
+	color: black;
+}
+
+.favoritescontainer {
+	position: ;
+}
+
+.projectslist {
+}
+
+
+bigtitle {
+	font-family: athelas, serif;
+	font-color: black;
+	font-size: 32.2px;
+	writing-mode: vertical-lr;
+  	text-orientation: upright;
+  	letter-spacing: -2px;
+  	z-index: 1;
+}
+
+hometitles {
+	font-family: athelas, serif;
+	font-color: black;
+	text-decoration: underline;
+	font-size: 13.6px;
+	line-height: 2.1;
+}
+
+hometext {
+	margin-left: 12px;
+	display: inline-block;
+	font-family: "Helvetica Neue";
+	letter-spacing: 0.062em;
+	color: black;
+	font-size: 8.9px;
+	line-height: 1.63;
+}
+
+.project {
+	width: 200px;
+}
+
+.project:hover {
+	text-indent: 15px;
+	color: #6C7D55;
+}
+
+
+
