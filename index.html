@@ -3,6 +3,7 @@
 <head>
 		<link rel="stylesheet" href="styles.css">
 		<title> ericka </title>
+		<link rel="shortcut icon" href="o.png" type="image/png">
 </head>
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -28,11 +29,11 @@
 		    	</div>
 		    	<div style = "width: 350px; font-size: 0;"> 
 					<hometitles>projects: </hometitles> <br>
-		    			<hometext class = project> Yi-Yi: A Visualization </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
-		    			<hometext class = project> MIT GrandHack: Op-Pal </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
-		    			<hometext class = project> Brown Datathon: Diabetes Dashboard </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
-		    			<hometext class = project> Design </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br> 
-		    			<hometext class = project> Film </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br> 
+		    			<hometext id = 1 class = project> Yi-Yi: A Visualization </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
+		    			<hometext id = 2 class = project> MIT GrandHack: Op-Pal </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
+		    			<hometext id = 3 class = project> Brown Datathon: Diabetes Dashboard </hometext> <hometext style ="text-align: right; width: 50px"> 09 2019 </hometext> <br>
+		    			<hometext id = design class = project> Design </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br> 
+		    			<hometext id = film class = project> Film </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br> 
 		    	</div>
 		    	<div style = " position:absolute; top:490px; left:290px; height: 100px; width: 145px; font-size: 0;"> 
 		    		<hometext style = "font-weight: 500; font-size: 12px"> just <br> some <br> icons </hometext> <br>
@@ -40,17 +41,18 @@
 		    	<div style = " position:absolute; top:600px; left:40px; height: 200px; width: 285px; font-size: 0;"> 
 		    		<hometitles style = "font-style: italic; text-decoration: none; font-size: 13px; font-weight: bold"> current favorite reads/watches/things</hometext> <br>
 		    	</div>
-		    	<img src = "me.png" style ="position:absolute; top:80px; left:310px; width: 115px; opacity: 0.83">
+		    	 <!-- <img src = "img/happy.png" style ="position:absolute; top:80px; left:320px; width: 80px; opacity: 0.83">  -->
+		    	 <img src = "me.png" style ="position:absolute; top:80px; left:310px; width: 115px; opacity: 0.83">
 		    	<bigtitle style = "position:absolute; top:145px; left:402px; height: 430px"> ERICKA WU </bigtitle>
 			</div>
 	  	</div>	  
 	  	<div class="column right">
 			<div class=photocontainer>
 				<photogrid> 
-					<img src = "img/1.jpg" style = "grid-column: 2 / span 5; grid-row: 2">
-					<img src = "img/1.jpg" style = "grid-column: 4 / span 5; grid-row: 13">
-					<img src = "img/1.jpg" style = "grid-column: 20; grid-row: 1 / span 5">
-					<img src = "img/1.jpg" style = "grid-column: 20; grid-row: 20 / span 5">
+					<img src = "img/1.jpg" style = "grid-column: 2 / span 5; grid-row: 2 / span 2">
+					<img src = "img/1.jpg" style = "grid-column: 4 / span 5; grid-row:  17 / span 3">
+					<img src = "img/2.jpg" style = "grid-column: 4 / span 7; grid-row: 13 / span 5">
+					<img src = "img/1.jpg" style = "grid-column: 15 / span 5; grid-row: 1">
 				</photogrid>
 			</div>
 	  	</div>
