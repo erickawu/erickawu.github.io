@@ -15,8 +15,8 @@ body {
 
 .left {
 	position: left;
-	width: 550px;
-	min-width: 550px;
+	width: 515px;
+	min-width: 515px;
 }
 
 .right {
@@ -25,11 +25,12 @@ body {
 }
 
 photogrid {
+	margin-left: 40px;
 	display: grid;
-	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: repeat(20, 1fr);
-	min-height: 600px;
-	max-height: 600px;
+	grid-template-columns: repeat(36, 20px);
+	grid-template-rows: repeat(36, 20px);
+	min-height: 700px;
+	max-height: 700px;
 }
 
 img {
@@ -38,17 +39,18 @@ img {
 
 .homecontainer {
 	margin-top: 60px;
-	min-width: 400px;
+	min-width: 370px;
+	max-width: 370px;
 	position: relative;
-	margin-left: 45px;
+	margin-left: 55px;
 }
 
 .photocontainer {
 	margin-top: 40px;
-	margin-left: 50px;
+	margin-left: 40px;
 	position: relative;
-	max-width: 680px;
-	min-width: 680px;
+	max-width: 720px;
+	min-width: 720px;
 
 }
 
