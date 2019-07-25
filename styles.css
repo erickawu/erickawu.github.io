@@ -51,6 +51,7 @@ photogrid {
 }
 
 .homecontainer {
+	display: none;
 	margin-top: 15px;
 	min-width: 370px;
 	max-width: 370px;
@@ -59,19 +60,19 @@ photogrid {
 }
 
 .photocontainer {
+	display: none;
 	margin-top: 20px;
 	margin-left: 40px;
 	position: relative;
 	max-width: 720px;
 	min-width: 720px;
-
 }
 
 .favoritescontainer {
-	position: ;
 }
 
 .projectcontainer {
+	display: none;
 	position: relative;
 	text-align: left;
 	color: black;
@@ -83,12 +84,14 @@ bigtitle {
 	font-color: black;
 	font-size: 32.2px;
 	writing-mode: vertical-lr;
+	-webkit-writing-mode: vertical-lr;
   	text-orientation: upright;
   	letter-spacing: -2px;
   	z-index: 1;
 }
 
 hometitles {
+	-webkit-transform-origin;
 	font-family: athelas, serif;
 	font-color: black;
 	font-size: 13.6px;
@@ -98,15 +101,19 @@ hometitles {
 hometext {
 	margin-left: 12px;
 	display: inline-block;
-	font-family: "Helvetica Neue";
+	font-family: Helvetica Neue;
 	letter-spacing: 0.062em;
 	color: black;
 	font-size: 8.9px;
 	line-height: 1.63;
 }
 
+.navbar{
+	display: none;
+}
+
 contact {
-	margin-left: 20px;
+	margin-left: 18px;
 	font-family: courier; 
 	font-weight: 500; 
 	font-size: 11px; 
@@ -116,17 +123,10 @@ contact {
 
 .project {
 	width: 200px;
-	-webkit-filter: color(black);
-	-moz-filter: color(black);
-	filter: color(black);
 }
 
 .project:hover {
 	transition: filter 0.5s ease-in-out;
-	-webkit-filter: color(firebrick);
-	-moz-filter: color(firebrick);
-	filter: color(firebrick);
 }
-
 
 
