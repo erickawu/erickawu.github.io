@@ -5,6 +5,11 @@ body {
 	transition: ease-in-out;
 }
 
+@font-face {
+	font-family: 'Apercu_Regular';
+	src: url(font/Apercu_Regular.otf);
+}
+
 .row {
   display: flex;
 }
@@ -52,10 +57,10 @@ photogrid {
 
 .homecontainer {
 	display: none;
-	margin-top: 15px;
+	margin-top: 85px;
+	position: relative;
 	min-width: 370px;
 	max-width: 370px;
-	position: relative;
 	margin-left: 55px;
 }
 
@@ -110,6 +115,11 @@ hometext {
 
 .navbar{
 	display: none;
+	text-align: right;
+	margin-left: 265px; 
+	margin-top: 20px; 
+	height: 50px;
+	position: fixed;
 }
 
 contact {
@@ -128,5 +138,4 @@ contact {
 .project:hover {
 	transition: filter 0.5s ease-in-out;
 }
-
 

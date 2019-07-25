@@ -9,4 +9,11 @@ $(document).ready(function() {
         	$(".projectcontainer").fadeIn('slow');
     	});
     });
+
+	$("bigtitle").click(function() {
+		$(".projectcontainer").fadeOut('fast', function() {
+        	$(".photocontainer").fadeIn('slow');
+    	});
+    });
+
 });
