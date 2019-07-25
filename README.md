@@ -1,5 +1,4 @@
-# website
+# ericka's website!! 
 
-1. homepage
-2. photos
-3. projects
+1. about bar
+2. project container
