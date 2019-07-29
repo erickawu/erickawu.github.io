@@ -3,6 +3,7 @@ body {
 	background-color: #F3F2EE;
 	transition-delay: 0.3s;
 	transition: ease-in-out;
+    margin: 0;
 }
 
 @font-face {
@@ -12,6 +13,9 @@ body {
 
 .row {
   display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -19,14 +23,13 @@ body {
 }
 
 .left {
-	position: left;
+	display: inline-flex;
 	width: 515px;
 	min-width: 515px;
 }
 
 .right {
-	position: left;
-	width: auto;
+	display: inline-flex;
 }
 
 photogrid {
