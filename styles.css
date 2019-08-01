@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
 	background-color: #F3F2EE;
@@ -11,32 +14,21 @@ body {
 	src: url(font/Apercu_Regular.otf);
 }
 
-.row {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .column {
   float: left;
+  height: 700px;
 }
 
 .left {
-	display: inline-flex;
-	width: 515px;
 	min-width: 515px;
+	width: 515px;
 }
 
-.right {
-	display: inline-flex;
-}
 
 photogrid {
-	margin-left: 40px;
 	display: grid;
 	grid-template-columns: repeat(36, 20px);
-	grid-template-rows: repeat(36, 20px);
+	grid-template-rows: repeat(35, 20px);
 	min-height: 700px;
 	max-height: 700px;
 }
@@ -60,7 +52,7 @@ photogrid {
 
 .homecontainer {
 	display: none;
-	margin-top: 85px;
+	margin-top: 30px;
 	position: relative;
 	min-width: 370px;
 	max-width: 370px;
@@ -70,7 +62,7 @@ photogrid {
 .photocontainer {
 	display: none;
 	margin-top: 20px;
-	margin-left: 40px;
+	margin-left: 80px;
 	position: relative;
 	max-width: 720px;
 	min-width: 720px;
@@ -119,10 +111,10 @@ hometext {
 .navbar{
 	display: none;
 	text-align: right;
-	margin-left: 265px; 
+	margin-right: 75px;
 	margin-top: 20px; 
 	height: 50px;
-	position: fixed;
+	position: relative;
 }
 
 contact {
@@ -142,3 +134,14 @@ contact {
 	transition: filter 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .homecontainer {
+  	position: fixed;
+  }
+  .navbar {
+  	position: fixed;
+  }
+}
