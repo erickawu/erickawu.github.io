@@ -134,14 +134,9 @@ contact {
 	transition: filter 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media screen and (max-width: 700px) {
+   .homecontainer {
+  	width: 100%;
   }
-  .homecontainer {
-  	position: fixed;
-  }
-  .navbar {
-  	position: fixed;
-  }
+
 }
