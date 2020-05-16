@@ -142,6 +142,7 @@ a:hover {
 }
 
 #receipt {
+  display: none;
   padding: 14px;
   -webkit-height:660px;
   width: 306px;

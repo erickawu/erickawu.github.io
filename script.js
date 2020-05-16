@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$("#receipt").fadeIn('slow');
+	$("#receipt").fadeIn(1600);
 });
