@@ -115,7 +115,7 @@ a:hover {
 
 
 #total{
-	font-family: PTMono-Regular;
+	font-family: PT Mono;
 	font-size: 13px;
 	margin-bottom: 33px;
 	margin-top: 27px;	
@@ -143,6 +143,7 @@ a:hover {
 
 #receipt {
   padding: 13px;
+  -webkit-height:660px;
   width: 306px;
   height: 660px;
   background-color: white;
