@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #F3F2EE;
+	transition-delay: 0.3s;
+	transition: ease-in-out;
+    margin: 0;
+}
+
+@font-face {
+	font-family: 'Apercu_Regular';
+	src: url(font/Apercu_Regular.otf);
+}
+
+.column {
+  float: left;
+  height: 700px;
+}
+
+.left {
+	min-width: 515px;
+	width: 515px;
+}
+
+
+photogrid {
+	display: grid;
+	grid-template-columns: repeat(36, 20px);
+	grid-template-rows: repeat(35, 20px);
+	min-height: 700px;
+	max-height: 700px;
+}
+
+.displayphotos {
+	transition: filter 0.3s ease-in-out;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.23);
+	width: 100%;
+	-webkit-filter: grayscale(80%) opacity(0.72);
+	-moz-filter: grayscale(80%) opacity(0.72);
+	filter: grayscale(65%) opacity(0.70) brightness(75%); 
+
+}
+.displayphotos:hover {
+  transition: filter 0.5s ease-in-out;
+	-webkit-filter: grayscale(0%) opacity(1);
+	-moz-filter: grayscale(0%) opacity(1);
+	filter: grayscale(0%) opacity(1);
+  z-index: 2;
+}
+
+.homecontainer {
+	display: none;
+	margin-top: 30px;
+	position: relative;
+	min-width: 370px;
+	max-width: 370px;
+	margin-left: 55px;
+}
+
+.photocontainer {
+	display: none;
+	margin-top: 20px;
+	margin-left: 80px;
+	position: relative;
+	max-width: 720px;
+	min-width: 720px;
+}
+
+.favoritescontainer {
+}
+
+.projectcontainer {
+	display: none;
+	position: relative;
+	text-align: left;
+	color: black;
+}
+
+
+bigtitle {
+	font-family: athelas, serif;
+	font-color: black;
+	font-size: 32.2px;
+	writing-mode: vertical-lr;
+	-webkit-writing-mode: vertical-lr;
+  	text-orientation: upright;
+  	letter-spacing: -2px;
+  	z-index: 1;
+}
+
+hometitles {
+	-webkit-transform-origin;
+	font-family: athelas, serif;
+	font-color: black;
+	font-size: 13.6px;
+	line-height: 2.1;
+}
+
+hometext {
+	margin-left: 12px;
+	display: inline-block;
+	font-family: Helvetica Neue;
+	letter-spacing: 0.062em;
+	color: black;
+	font-size: 8.9px;
+	line-height: 1.63;
+}
+
+.navbar{
+	display: none;
+	text-align: right;
+	margin-right: 75px;
+	margin-top: 20px; 
+	height: 50px;
+	position: relative;
+}
+
+contact {
+	margin-left: 16px;
+	font-family: courier; 
+	font-weight: 500; 
+	font-size: 11px; 
+	color: #212121;
+	text-decoration: underline;
+}
+
+.project {
+	width: 200px;
+}
+
+.project:hover {
+	transition: filter 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+   .homecontainer {
+  	width: 100%;
+  }
+
+}

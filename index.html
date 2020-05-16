@@ -1,68 +1,137 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="styles.css">
-		<title> ericka </title>
-		<link rel="shortcut icon" href="o.png" type="image/png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<link rel='stylesheet' type='text/css' href='styles.css'>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@375;650&display=swap'>
+<link rel="shortcut icon" href="img/smiley.png" type="image/png">
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css2?family=PT+Mono'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="UTF-8">
-
-	</head>
-	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script src="index.js" type="text/javascript"></script>
-		<div class = "row">
-			<div class="column left">
-					<div class = navbar> 
-						<contact id = mail><a style="color: #212121;" href="mailto:ericka.wu@columbia.edu">mail</a></contact> 
-						<contact id = in><a style="color: #212121;" href="https://www.linkedin.com/in/ericka-wu-450549158/">in</a></contact> 
-						<contact id = gh><a style="color: #212121;" href="http://www.github.com/erickawu">gh</a></contact> 
-						<contact id = ig><a style="color: #212121;" href="http://www.instagram.com/ericka.wu">ig</a></contact>
-						<contact id = lb><a style="color: #212121;" href="http://www.letterboxd.com/satsuma">lb</a></contact>
-					</div>
-				<div class=homecontainer>
-					<div style = "height: 100px; margin-top: 20px"> 
-						<hometitles>currently &mdash; </hometitles>
-						<br>
-			    		<hometext>
-			    			Statistics & Computer Science @ Columbia University <br>
-			    			Data Science @ LionBase <br>
-			    			Columbia Department of Biomedical Informatics <br>
-			    		</hometext>
-			    	</div>
-			    	<div style = "height: 170px"> 
-						<hometitles>previously &mdash; </hometitles> <br>
-			    		<hometext>
-			    			Software Engineering Intern @ ServiceNow <br>
-			    			Research @ Hillman Lab, Columbia Zuckerman Institute
-			    		</hometext>
-			    	</div>
-			    	<div style = "width: 350px; font-size: 0;"> 
-						<hometitles>projects &mdash; </hometitles> <br>
-			    			<hometext id = 1 class = project> MIT GrandHack: Surgical Outcomes Track </hometext> <hometext style ="text-align: right; width: 50px"> 05 2019 </hometext> <br>
-			    			<hometext id = 2 class = project> Brown Datathon: Diabetes Dashboard </hometext> <hometext style ="text-align: right; width: 50px"> 02 2019 </hometext> <br>
-			    			<hometext id = 3 class = project> Film </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br>
-			    			<hometext id = design class = project> Design </hometext> <hometext style ="text-align: right; width: 50px"> Ongoing </hometext> <br> 
-			    	</div>
-			    	 <img src = "me.png" style ="position:absolute; top:85px; left:310px; width: 115px; opacity: 0.83; filter: grayscale(0%);"> 
-			    	<bigtitle style = "position:absolute; top:160px; left:402px; height: 430px"> ERICKA WU </bigtitle>
-				</div>
-		  	</div>	  
-		  	<div class="column">
-				<div class=photocontainer>
-					<photogrid> 
-						<img src = "img/1.jpg" class = "displayphotos" style = "grid-column: 1 / span 9; grid-row: 3">
-						<img src = "img/2.jpg" class = "displayphotos" style = "grid-column: 18 / span 9; grid-row: 1">
-						<img src = "img/3.jpg" class = "displayphotos" style = "grid-column: 7 / span 14; grid-row: 9">
-						<img src = "img/4.jpg" class = "displayphotos" style = "grid-column: 26 / span 9; grid-row: 5">
-						<img src = "img/5.jpg" class = "displayphotos" style = "grid-column: 3 / span 9; grid-row: 19">
-						<img src = "img/6.jpg" class = "displayphotos" style = "grid-column: 16 / span 14; grid-row: 17">
-						<img src = "img/7.jpg" class = "displayphotos" style = "grid-column: 11 / span 9; grid-row: 22">
-						<img src = "img/9.jpg" class = "displayphotos" style = "grid-column: 28 / span 9; grid-row: 20">
-					</photogrid>
-				</div>
-				<div class = projectcontainer> </div>
-		  	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<div class='wrapper'> 
+  <div id='receipt'>
+  	<div id='lastupdated'> 03-23-2020 10:50:22PM </div>
+  	<div id='current'>
+  		<p> Data Eng @ <a href="https://www.datadoghq.com">Datadog</a></p>
+  		<p> <a href="https://www.columbia.edu">Columbia University</a></p>
+		<p> Statistics & Computer Science </p>
+		<p> Palo Alto, CA </p>
+	</div> 
+	<div id = 'name'>Ericka Wu</div>
+		<div id = 'desc'>
+	  		<p id = 'desc1' class = 'head'>
+	  			THE FOLLOWING
+	    		<span class = "price">
+	    			MADE
+	    		</span>
+	    	</p>	
+	    	<p class = 'titles' class = "items">
+	  			A collection
+	    		<span class = "price">
+	    			With love
+	    		</span>
+	    	</p>
 		</div>
-	</body>
+		<div class = 'line'> </div>
+		<div class = 'head' id = 'labels'>
+	  		<p>
+	  			ITEM
+	    		<span class = "price">
+	    			PRICE
+	    		</span>
+	    	</p>	
+	    </div>		
+	  	<div class = 'item' id = 'currently'>
+	  		<p class = 'titles'> Currently </p>
+	  		<p class = 'items'>
+	    		<a href="https://www.instagram.com/owarisatsuma">Visuals</a>
+	    		<span class = "price">
+	    			$82.52
+	    		</span>
+	    	</p>
+	  	</div> 	
+  		<div class = 'item' id = 'lists'>
+	  		<p class = 'titles'> Lists </p>
+	  		<p class = 'items'>
+	    		Favorites
+	    		<span class = "price">
+	    			$63.11
+	    		</span>
+	    	</p>
+	    	<p class = 'items'>
+	    		Recipes
+	    		<span class = "price">
+	    			$59.02
+	    		</span>
+	    	</p>
+	  	</div> 
+  		<div class = 'item' id = 'select'>
+	  		<p class = 'titles'> Select </p>
+	  		<p class = 'items'>
+	    		Moments
+	    		<span class = "price">
+	    			$31.43
+	    		</span>
+	    	</p>
+	  		<p class = 'items'>
+	    		Projects
+	    		<span class = "price">
+	    			$79.89
+	    		</span>	    		
+	    		<p class = 'subitems'>Data Vis </p>
+	    		<p class = 'subitems'> Other </p>
+	    	</p>	    	
+	  	</div> 
+  		<div class = 'item' id = 'socials'>
+	  		<p class = 'titles'> Socials </p>
+	  		<p class = 'items'>
+	    		<a href="https://www.linkedin.com/in/ericka-wu-450549158/"> Want to reach out? </a>
+	    		<span class = "price">
+	    			$1.36
+	    		</span>
+	    	</p>
+	  		<p class = 'items'>
+	    		<a href="mailto:ericka.wu@columbia.edu"> Email me, </a>
+	    		<span class = "price">
+	    			$6.98
+	    		</span>
+	    	</p>
+	  		<p class = 'items'>
+	    		give my clothes a new home,
+	    		<span class = "price">
+	    			$19.77
+	    		</span>
+	    	</p>
+	  		<p class = 'items'>
+	    		<a href="http://www.letterboxd.com/satsuma"> recommend me a movie, </a>
+	    		<span class = "price">
+	    			$34.22
+	    		</span>
+	    	</p>
+	  		<p class = 'items'>
+	    		send me a note in passing?
+	    		<span class = "price">
+	    			$4.51
+	    		</span>
+	    	</p>	    		    		    		    	
+	  	</div> 
+	  	<div class = 'line'> </div>
+	  	<div id = 'total'> 
+	  	<p> 
+	  		Total
+	    		<span class = 'price'>
+	    			$378.81
+	    		</span>
+	    </p>	  		
+	  	</div>	  	
+	  	<img src = "img/barcode.png" style =" display: block; margin-left: auto; margin-right: auto; height: 30px;"> 
+	  	<div id = 'end'> Thank you! Come again :) </div>
+  </div>
+</div>
+
+
+</body>
 </html>
