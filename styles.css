@@ -135,8 +135,7 @@ itemtext {
 	padding-left: 7px;
 }
 
-
-.wrapper {
+#wrapper {
   top: 0;
   left: 0;
   width: 100%;
@@ -166,3 +165,23 @@ itemtext {
 #backbutton {
 	cursor: pointer;
 }
+
+// for further pages
+
+.projcontainer {
+  top: 0;
+  left: 0;
+  width: 80%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid gray;
+}
+

@@ -13,7 +13,7 @@
 </head>
 <body>
 	<img id = 'backbutton' src = "img/back.png" style =" display: none; height: 25px;"> 
-<div class='wrapper'> 
+<div id='wrapper'> 
   <div id='receipt'>
   	<div id='lastupdated'> 03-23-2020 10:50:22PM </div>
   	<div id='current'>
@@ -63,7 +63,7 @@
 	    			$63.11
 	    		</span>
 	    	</p>
-	    	<p class = 'items'>
+	    	<p class = 'items' id = '2'>
 	    		<itemtext> Recipes </itemtext>
 	    		<span class = "price">
 	    			$59.02
@@ -72,13 +72,13 @@
 	  	</div> 
   		<div class = 'item' id = 'select'>
 	  		<p class = 'titles'> Select </p>
-	  		<p class = 'items'>
+	  		<p class = 'items' id = '3'>
 	    		<itemtext> Moments </itemtext>
 	    		<span class = "price">
 	    			$31.43
 	    		</span>
 	    	</p>
-	  		<p class = 'items'>
+	  		<p class = 'items' id = '4'>
 	    		<itemtext> Projects </itemtext>
 	    		<span class = "price">
 	    			$79.89
@@ -132,6 +132,17 @@
 	  	<img src = "img/barcode.png" style =" display: block; margin-left: auto; margin-right: auto; height: 30px;"> 
 	  	<div id = 'end'> Thank you! Come again :) </div>
   </div>
+</div>
+
+<div id='favorites' style='display: none;'>
+	<div class=card> placeholder text f </div>
+</div>
+<div id='recipes' style='display: none;'>
+	<div class=card> placeholder text r </div>
+</div>
+<div id='projects' style='display: none;'>
+	<div class=card> placeholder text p </div>
+	<div class=card> placeholder text p2 </div>
 </div>
 
 
