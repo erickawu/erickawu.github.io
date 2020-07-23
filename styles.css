@@ -85,7 +85,7 @@ itemtext {
 	float: right;
 }
 
-.back{
+.back {
 	position: fixed;
 	margin-top: 15px;
 	margin-left: 25px;
@@ -136,52 +136,44 @@ itemtext {
 }
 
 #wrapper {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1000px;
+	width: 100%;
+	height: 1000px;
 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 
-  justify-content: center;
+	justify-content: center;
 
 }
 
 #receipt {
-  margin-top: 120px;
-  display: none;
-  padding: 13px;
-  -webkit-height:660px;
-  width: 306px;
-  height: 660px;
-  background-color: white;
-  border: 1px solid #373734;
+	margin-top: 120px;
+	display: none;
+	padding: 13px;
+	-webkit-height:660px;
+	width: 306px;
+	height: 660px;
+	background-color: white;
+	border: 1px solid #373734;
+}
+
+
+.projcontainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 10%;
+}
+
+.card {
+	margin: 1rem;
+	border: 1px solid gray;
+	height: 100px;
 }
 
 #backbutton {
 	cursor: pointer;
 }
-
-// for further pages
-
-.projcontainer {
-  top: 0;
-  left: 0;
-  width: 80%;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.card {
-  margin: 1rem;
-  border: 1px solid gray;
-}
-

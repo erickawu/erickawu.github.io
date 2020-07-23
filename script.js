@@ -3,9 +3,10 @@ $(document).ready(function() {
 
 	$("#1").click(function() {
 		$("#wrapper").fadeOut(400, function() {
-        	$("#backbutton").fadeIn(1400).addClass('back');
             $("#favorites").fadeIn(1400).addClass('projcontainer');
     	});
+        $("#backbutton").fadeIn(1400).addClass('back');
+
     });
 
     $("#2").click(function() {
