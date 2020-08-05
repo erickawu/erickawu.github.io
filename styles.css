@@ -165,13 +165,17 @@ itemtext {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2rem;
-	padding: 10%;
+	padding: 100px;
+	align-content: center;
+	justify-content: center;
 }
 
 .card {
 	margin: 1rem;
 	border: 1px solid gray;
-	height: 100px;
+	height: 170px;
+	width: 300px;
+	background-color: white;
 }
 
 #backbutton {
