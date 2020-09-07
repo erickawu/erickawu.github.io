@@ -2,6 +2,7 @@
   background: radial-gradient(#373734 1.4px, #EFF0EB 1.4px);
   background-position: 0 0;
   background-size: 70px 70px;
+  background-attachment: fixed;
 }
 
 a, body {
@@ -146,14 +147,13 @@ itemtext {
 	display: flex;
 
 	justify-content: center;
-
 }
 
 #receipt {
 	margin-top: 120px;
 	display: none;
 	padding: 13px;
-	-webkit-height:660px;
+	-webkit-height: 660px;
 	width: 306px;
 	height: 660px;
 	background-color: white;
@@ -163,21 +163,43 @@ itemtext {
 
 .projcontainer {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 2rem;
+	grid-template-columns: auto;
+	grid-gap: 3rem;
 	padding: 100px;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 }
 
 .card {
 	margin: 1rem;
 	border: 1px solid gray;
-	height: 170px;
+	height: 200px;
 	width: 300px;
 	background-color: white;
 }
 
 #backbutton {
 	cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 3000px) {
+	.projcontainer {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 3rem;
+		padding: 100px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+	.projcontainer {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 3rem;
+		padding: 100px;
+		align-items: center;
+		justify-content: center;
+	}
 }
