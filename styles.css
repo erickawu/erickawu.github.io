@@ -26,12 +26,15 @@ a:hover {
   text-decoration: underline;
 }
 
-
+header {
+	font-family: PT Mono;
+	font-size: 16px;
+}
 
 .line {
   height:1px;
   background:
-    repeating-linear-gradient(to right,#454545 0,#454545 3px,transparent 3px,transparent 5.5px);
+    repeating-linear-gradient(to right, #454545 0,#454545 3px, transparent 3px, transparent 5.5px);
    margin-top: 23px;
    margin-bottom: 23px;
 }
@@ -90,13 +93,11 @@ itemtext {
 	position: fixed;
 	margin-top: 15px;
 	margin-left: 25px;
+	height: 25px;
 }
-
 
 #name{
 	text-align: center;
-	font-family: PT Mono;
-	font-size: 16px;
 	margin-bottom: 38px;
 }
 
@@ -153,9 +154,9 @@ itemtext {
 	margin-top: 120px;
 	display: none;
 	padding: 13px;
-	-webkit-height: 660px;
+	-webkit-height: 663px;
 	width: 306px;
-	height: 660px;
+	height: 663px;
 	background-color: white;
 	border: 1px solid #373734;
 }
@@ -163,7 +164,7 @@ itemtext {
 
 .projcontainer {
 	display: grid;
-	grid-template-columns: auto;
+	grid-template-columns: 1fr;
 	grid-gap: 3rem;
 	padding: 100px;
 	align-items: center;
@@ -173,8 +174,22 @@ itemtext {
 .card {
 	margin: 1rem;
 	border: 1px solid gray;
-	height: 200px;
-	width: 300px;
+	height: 160px;
+	width: 260px;
+	padding: 20px;
+	background-color: white;
+	align-self: center;
+  	justify-self: center;
+}
+
+.containercard {
+	margin-top: 60px;
+	border: 1px solid gray;
+	height: auto;
+	width: 70%;
+	min-width: 1000px;
+	padding-left: 60px;
+	padding-right: 60px;
 	background-color: white;
 }
 
@@ -185,7 +200,7 @@ itemtext {
 @media only screen and (min-width: 1200px) and (max-width: 3000px) {
 	.projcontainer {
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 3rem;
 		padding: 100px;
 		align-items: center;
@@ -196,7 +211,7 @@ itemtext {
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
 	.projcontainer {
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 3rem;
 		padding: 100px;
 		align-items: center;

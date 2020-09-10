@@ -1,0 +1,22 @@
+
+  h1 {
+    font-family: PT Mono;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-family: PT Mono;
+    text-align: center;
+    font-size: 20px;
+    margin-top:-10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 800;
+  }
+
+  #viz {
+    min-height: 4000px;
+  }
