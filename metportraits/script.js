@@ -76,7 +76,7 @@ window.createGraphic = function(graphicSelector) {
             var big = graph.selectAll('.big')
                 
             big.transition(tbig)
-                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - bigsize)/ 2))
+                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - bigsize)/ 2 - 120))
     
             big.select('image')
                 .transition(tbig)
@@ -345,7 +345,7 @@ window.createGraphic = function(graphicSelector) {
         
         chart.append('g')
             .classed('big', true)
-            .attr('transform', translate((chartSize) / 2, (chartSize) / 2))
+            .attr('transform', translate((chartSize) / 2, (chartSize) / 2) - 120)
             .append('svg:image')
                 .attr('height', 0)
                 .attr('width', 0)
@@ -353,17 +353,8 @@ window.createGraphic = function(graphicSelector) {
                 .attr("xlink:href", "img/europeanpaintingsall.jpg")
     
         chart.append('g')
-            .classed('intro', true)
-            .attr('transform', translate((chartSize) / 2, (chartSize) / 2-300))
-            .append('text')
-                .text("THE AVERAGE (1200-1950)")
-                .style("text-anchor", "middle")
-                .style("font", "15px inconsolata")
-                .style("fill", "black")
-        
-        chart.append('g')
                 .classed('intro', true)
-                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-280))
+                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-380))
                 .append('text')
                     .text("The Metropolitan Museum of Art, Department of European Paintings")
                     .style("text-anchor", "middle")
@@ -371,7 +362,7 @@ window.createGraphic = function(graphicSelector) {
                     .style("fill", "black")
                     chart.append('g')
                     .classed('intro', true)
-                    .attr('transform', translate((chartSize) / 2, (chartSize) / 2-300))
+                    .attr('transform', translate((chartSize) / 2, (chartSize) / 2-400))
                     .append('text')
                         .text("THE AVERAGE (1200-1950)")
                         .style("text-anchor", "middle")
