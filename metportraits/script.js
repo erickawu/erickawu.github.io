@@ -42,7 +42,7 @@ window.createGraphic = function(graphicSelector) {
             .append("g") 
             .transition(t)  
             .attr('opacity', 1)
-            .attr("transform", translate(0,chartSize/2+120))
+            .attr("transform", translate(0,chartSize/2+20))
             .call(styled_ticks)     
             .style("font", "12px inconsolata")    
             .selectAll("text")
@@ -99,7 +99,7 @@ window.createGraphic = function(graphicSelector) {
             var big = graph.selectAll('.big')
                 
             big.transition(tbig)
-                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 520)/ 2))
+                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 700)/ 2))
     
             big.select('image')
                 .transition(tbig)
@@ -111,7 +111,7 @@ window.createGraphic = function(graphicSelector) {
                 
             item.transition(t)
                 .attr('transform', function(d, i) {
-                    return translate(scaleX(i), chartSize / 2+50)
+                    return translate(scaleX(i), chartSize / 2-50)
                 })
 
             
@@ -136,7 +136,7 @@ window.createGraphic = function(graphicSelector) {
 
             d3.select('.chart').append('g')
                 .classed('intro2', true)
-                .attr('transform', translate((chartSize) / 2, (chartSize) / 2+30))
+                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-80))
                 .append('text')
                 .transition(t)
                 .text("Averages Per 50 Years:")
@@ -148,7 +148,7 @@ window.createGraphic = function(graphicSelector) {
         if (sw == 1) {        
                     d3.select('.chart').append('g')
                         .classed('intro', true)
-                        .attr('transform', translate((chartSize) / 2, (chartSize) / 2-300))
+                        .attr('transform', translate((chartSize) / 2, (chartSize) / 2-400))
                         .append('text')
                             .text("THE AVERAGE (1200-1950)")
                             .style("text-anchor", "middle")
@@ -156,7 +156,7 @@ window.createGraphic = function(graphicSelector) {
                             .style("fill", "black")
                     d3.select('.chart').append('g')
                         .classed('intro', true)
-                        .attr('transform', translate((chartSize) / 2, (chartSize) / 2-280))
+                        .attr('transform', translate((chartSize) / 2, (chartSize) / 2-380))
                         .append('text')
                             .text("The Metropolitan Museum of Art, Department of European Paintings")
                             .style("text-anchor", "middle")
@@ -173,7 +173,7 @@ window.createGraphic = function(graphicSelector) {
             var big = graph.selectAll('.big')
                 
             big.transition(tbig)
-                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 480)/ 2))
+                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 670)/ 2 ))
     
             big.select('image')
                 .transition(tbig) 
@@ -191,7 +191,7 @@ window.createGraphic = function(graphicSelector) {
 
             item.transition(t)
                 .attr('transform', function(d, i) {
-                    return translate(scaleX(i)-(scaleR(d.count)-55)/2, (chartSize-scaleR(d.count)+55) / 2+50)
+                    return translate(scaleX(i)-(scaleR(d.count)-55)/2, (chartSize-scaleR(d.count)+55) / 2 - 50)
                 })
                 
             item.select('image')
@@ -205,13 +205,13 @@ window.createGraphic = function(graphicSelector) {
 
             d3.select('.chart').append('g')
                 .classed('info',true)
-                .attr("transform",translate(chartSize/2,chartSize/2+30))
+                .attr("transform",translate(chartSize/2,chartSize/2-70))
                 .attr("width", chartSize)
                 .attr("height", 100)
             
             item.selectAll('image')
                 .on('mouseover', function (d) {
-                    d3.selectAll('.info').append('text')
+                    d3.select('.info').append('text')
                           .text(d.time + ", " + d.count + " total paintings averaged")
                           .style("fill","black")
                           .style("font", "12px inconsolata")
@@ -220,7 +220,7 @@ window.createGraphic = function(graphicSelector) {
 
                     d3.select('.chart').append('g')
                         .classed('all', true)
-                        .attr('transform', translate(0, (chartSize) / 2+200))
+                        .attr('transform', translate(0, (chartSize) / 2 + 70))
                         .selectAll('small')
                         .data(d.all)
                         .enter().append("svg:image")
@@ -251,39 +251,15 @@ window.createGraphic = function(graphicSelector) {
 
             d3.select('.chart').append('g')
                 .classed('intro2', true)
-                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-270))
+                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-360))
                 .append('text')
-                .text("Mouse over a subset:")
+                .text("MOUSE OVER A SUBSET:")
                 .transition(d3.transition()
                 .duration(500)
                 .ease(d3.easePoly))               
                 .style("text-anchor", "middle")
                 .style("font", "12px inconsolata")
                 .style("fill", "black")
-        }
-        else if  (num == 4) {
-
-            /* 
-            d3.json(faces).then(function(display) {
-                d3.select('.chart').selectAll('all')
-                    .data(display)
-                    .enter().append('g')
-                        .classed('all', true)
-                        .attr('transform', translate(0, (chartSize) / 2+220))
-                        .selectAll('small')
-                        .data(function(display) {return display.all})
-                        .enter().append('svg:image')
-                            .classed('small', true)
-                            .attr('height', 30)
-                            .attr('width', 30)
-                            .attr('x', function(d,i) {return((30*i)%960)})
-                            .attr('y', function(d,i) {return(31*(i/30 | 0))})
-                            .attr("xlink:href", function(d) {
-                                return(d)
-                            })
-            })
-            */
-
         }
     }
 
@@ -345,7 +321,7 @@ window.createGraphic = function(graphicSelector) {
         
         chart.append('g')
             .classed('big', true)
-            .attr('transform', translate((chartSize) / 2, (chartSize) / 2) - 120)
+            .attr('transform', translate((chartSize) / 2, (chartSize) / 2) - 140)
             .append('svg:image')
                 .attr('height', 0)
                 .attr('width', 0)
