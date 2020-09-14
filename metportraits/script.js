@@ -90,6 +90,11 @@ window.createGraphic = function(graphicSelector) {
             
             graph.selectAll('.intro2').select('text').remove() 
 
+            d3.select('svg')
+                        .transition(d3.transition()
+                            .duration(500)
+                            .ease(d3.easePoly)) 
+                        .attr('height', size - 300 + 'px')
 
         }
 
@@ -163,6 +168,11 @@ window.createGraphic = function(graphicSelector) {
                             .style("font", "12px inconsolata")
                             .style("fill", "black")
             }
+                    d3.select('svg')
+                        .transition(d3.transition()
+                            .duration(500)
+                            .ease(d3.easePoly)) 
+                        .attr('height', size - 370 + 'px')
     
         }
     
@@ -173,7 +183,7 @@ window.createGraphic = function(graphicSelector) {
             var big = graph.selectAll('.big')
                 
             big.transition(tbig)
-                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 670)/ 2 ))
+                .attr('transform', translate((chartSize - bigsize)/ 2, (chartSize - 710)/ 2 ))
     
             big.select('image')
                 .transition(tbig) 
@@ -205,7 +215,7 @@ window.createGraphic = function(graphicSelector) {
 
             d3.select('.chart').append('g')
                 .classed('info',true)
-                .attr("transform",translate(chartSize/2,chartSize/2-70))
+                .attr("transform",translate(chartSize/2,chartSize/2-85))
                 .attr("width", chartSize)
                 .attr("height", 100)
             
@@ -218,6 +228,12 @@ window.createGraphic = function(graphicSelector) {
                           .style("text-anchor", "middle")
                     d3.select(this).attr("opacity",1) 
 
+                    d3.select('svg')
+                        .transition(d3.transition()
+                            .duration(500)
+                            .ease(d3.easePoly)) 
+                        .attr('height', size - 320 + 41*(d.count/24 | 0) + 'px')
+
                     d3.select('.chart').append('g')
                         .classed('all', true)
                         .attr('transform', translate(0, (chartSize) / 2 + 70))
@@ -225,7 +241,7 @@ window.createGraphic = function(graphicSelector) {
                         .data(d.all)
                         .enter().append("svg:image")
                             .classed('small', true)
-                            .attr('x', function(d,i) {return((40*i)%960)})
+                            .attr('x', function(d,i) {return((40*i)%960-5)})
                             .attr('y', function(d,i) {return(41*(i/24 | 0))})                            
                             .transition(d3.transition()
                             .duration(500)
@@ -241,17 +257,22 @@ window.createGraphic = function(graphicSelector) {
                     d3.selectAll('.info2').select('text').remove()
                     item.selectAll('image').attr('opacity', 1) 
                     d3.select(this).attr("opacity",1) 
+                   
+                    d3.select('svg')
+                        .transition(d3.transition()
+                            .duration(500)
+                            .ease(d3.easePoly)) 
+                        .attr('height', size - 370 + 'px')
 
                     d3.selectAll('.all').remove()
                 })
     
-
             graph.selectAll('.intro').select('text').remove() 
             graph.selectAll('.intro2').select('text').remove() 
 
             d3.select('.chart').append('g')
                 .classed('intro2', true)
-                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-360))
+                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-385))
                 .append('text')
                 .text("MOUSE OVER A SUBSET:")
                 .transition(d3.transition()
@@ -285,7 +306,7 @@ window.createGraphic = function(graphicSelector) {
 	function setupCharts() {
 		var svg = graph.append('svg')
 			.attr('width', size + 'px')
-            .attr('height', size  + 300 +  'px')
+            .attr('height', size  - 300 +  'px')
             
 		
 		var chart = svg.append('g')
@@ -336,10 +357,10 @@ window.createGraphic = function(graphicSelector) {
                     .style("text-anchor", "middle")
                     .style("font", "12px inconsolata")
                     .style("fill", "black")
-                    chart.append('g')
-                    .classed('intro', true)
-                    .attr('transform', translate((chartSize) / 2, (chartSize) / 2-400))
-                    .append('text')
+        chart.append('g')
+                .classed('intro', true)
+                .attr('transform', translate((chartSize) / 2, (chartSize) / 2-400))
+                .append('text')
                         .text("THE AVERAGE (1200-1950)")
                         .style("text-anchor", "middle")
                         .style("font", "15px inconsolata")
