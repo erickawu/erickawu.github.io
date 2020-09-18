@@ -201,13 +201,14 @@ itemtext:hover {
 	margin-top: 70px;
 	border: 1px solid gray;
 	width: 70%;
-	min-width: 870px;
+	min-width: 1000px;
 	padding-left: 70px;
 	padding-right: 70px;
 	padding-bottom: 50px;
 	padding-top: 50px;
 	margin-bottom: 70px;
 	background-color: white;
+	justify-content: center;
 }
 
 #backbutton {

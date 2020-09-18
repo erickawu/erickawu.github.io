@@ -41,3 +41,9 @@
   a {
     font-size: 13px;
   }
+
+#viz{
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: -35px;
+}
