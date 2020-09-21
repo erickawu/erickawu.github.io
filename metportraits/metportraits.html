@@ -21,10 +21,10 @@
 	  <div class=subtitle> Visualizing Aesthetic Changes of the Human Face in European Portraiture </div>
 		<div class = 'line' style="margin-bottom: 40px"> </div>
 	  <div class=sectiontitle>Introduction</div>
-	  <p>It’s probably a question you never had. Regardless, I’ve answered it.</p>
+	  <p>It’s probably not a question you had.</p>
 	  <p> As stated on their website, the archives at the Metropolitan Museum hold over 470,000 works, and the data and pictures of these objects can be accessed via the Met's publicly released API <a href = 'https://metmuseum.github.io/'>here</a>. Each work has around 50 attributes (date added to collection, medium, and even under what fund a piece is purchased). 
-	  <p> Having spent a significant portion of our classtime on European works, especially portraiture, in Art Humanities @ Columbia, I chose the most fitting subset of data: European Portraits, department 8 out of 13.</p>
-	  <p>This small visualization aims to give one a bit of insight into the the aesthetic representation of the human face European portraits. It provides a visual overview of its style and development throughout the years, and .</p>
+	  <p> Having spent a significant portion of our classtime on European works, especially portraiture, in Art Humanities @ Columbia, I chose the most fitting subset of data: European Portraits, one of the 13 departments at the Met. Noncoincidentally, the works in this department had the highest proportion of detectable faces. </p>
+	  <p>This small visualization aims to give one a bit of insight into the the aesthetic representation of the human face European portraits. It provides a visual overview of its style and development throughout the years as well as a peek into how the Met's curatorial decisions in representing these art periods.</p>
 
 	  <div class=sectiontitle>Methodology</div>
 	  <p>Using OpenCV in Python, I constructed a series of scripts that normalized faces from each portrait input by performing facial detection, assigning facial landmarks, aligning features, and warping the image based on Delaunay triangulation. This way, an accurate and nonpolluted average can be taken across the subset of transformed faces. In other words, it’s a fancy way of saying: I cropped the portraits into uncomfortably close face shots, squashed those into 2D, and took the average of those faces.</p>
